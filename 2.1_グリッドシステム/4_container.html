@@ -1,5 +1,3 @@
-<!-- 編集中 -->
-
 <!doctype html>
 <html lang="ja">
   <head>
@@ -13,8 +11,27 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
+    <!-- container-fluid「ウィンドウ幅」に応じて「内部の幅」を変化させる場合に使用します -->
+    <p style="background:#6D9;">container-fluidで囲む</p>
+    <div class="container-fluid">    
+        <div class="row">
+            <div class="col-7" style="background: #FB8;height: 100px;">one</div>
+            <div class="col-5" style="background: #FD9;height: 100px;">two</div>
+        </div>
+    </div>
+    <!-- containerは「内部の幅」を固定（段階的な固定幅）して中央に配置するときに使用します-->
+    <!-- ウィンドウ幅：576px未満⇒内部幅：ウィンドウ幅と同じ -->
+    <!-- ウィンドウ幅：576～768px未満⇒内部幅：540px -->
+    <!-- ウィンドウ幅：768～992px未満⇒内部幅：720px -->
+    <!-- ウィンドウ幅：992～1200px未満⇒内部幅：960px -->
+    <!-- ウィンドウ幅：1200px以上⇒内部幅：1140px -->
+    <p style="background:#6D9;">containerで囲む</p>
+    <div class="container">        
+        <div class="row">
+            <div class="col-7" style="background: #FB8;height: 100px;">one</div>
+            <div class="col-5" style="background: #FD9;height: 100px;">two</div>
+        </div>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
