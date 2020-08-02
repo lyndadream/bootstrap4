@@ -13,41 +13,74 @@
   <body>
     <div class="container-fluid">
         <h2 style="background: #6D9;">Grid System（行内の配置）</h2>
-        <!-- 行内にあるブロックの合計幅が12列より少なかった場合：
+        <!-- 
+            行内にあるブロックの合計幅が12列より少なかった場合：
             justify-content-startは左揃え（初期値）で
             justify-content-centerは中央揃えで
             justify-content-endは右揃えで
             justify-content-betweenは均等割り付けで
-            justify-content-aroundは各ブロックの左右に均等の間隔で配置されます。 -->
-        <div class="row justify-content-start">
-            <div class="col-3" style="background: #FB8;height: 20px;">ブロックA</div>
-            <div class="col-2" style="background: #FD9;height: 20px;">ブロックB</div>
-            <div class="col-3" style="background: #FB8;height: 20px;">ブロックC</div>
+            justify-content-aroundは各ブロックの左右に均等の間隔で配置されます。
+         -->
+        <div class="row justify-content-start" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: #FB8;height: 20px;">start-A</div>
+            <div class="col-2" style="background: #FD9;height: 20px;">start-B</div>
+            <div class="col-3" style="background: #FB8;height: 20px;">start-C</div>
         </div>
-        <div class="row justify-content-center">
-            <div class="col-3" style="background: rgb(136, 255, 164);height: 20px;">ブロックA</div>
-            <div class="col-2" style="background: rgb(51, 151, 62);height: 20px;">ブロックB</div>
-            <div class="col-3" style="background: rgb(136, 255, 223);height: 20px;">ブロックC</div>
+        <div class="row justify-content-center" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgb(136, 255, 164);height: 20px;">center-A</div>
+            <div class="col-2" style="background: rgb(51, 151, 62);height: 20px;">center-B</div>
+            <div class="col-3" style="background: rgb(136, 255, 223);height: 20px;">center-C</div>
         </div>
-        <div class="row justify-content-end">
-            <div class="col-3" style="background: rgb(199, 127, 61);height: 20px;">ブロックA</div>
-            <div class="col-2" style="background: rgb(168, 137, 51);height: 20px;">ブロックB</div>
-            <div class="col-3" style="background: rgb(148, 110, 29);height: 20px;">ブロックC</div>
+        <div class="row justify-content-end" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgb(199, 127, 61);height: 20px;">end-A</div>
+            <div class="col-2" style="background: rgb(168, 137, 51);height: 20px;">end-B</div>
+            <div class="col-3" style="background: rgb(148, 110, 29);height: 20px;">end-C</div>
         </div>
-        <div class="row justify-content-between">
-            <div class="col-3" style="background: rgb(202, 56, 171);height: 20px;">ブロックA</div>
-            <div class="col-2" style="background: rgb(172, 93, 152);height: 20px;">ブロックB</div>
-            <div class="col-3" style="background: rgb(153, 14, 67);height: 20px;">ブロックC</div>
+        <div class="row justify-content-between" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgb(202, 56, 171);height: 20px;">between-A</div>
+            <div class="col-2" style="background: rgb(172, 93, 152);height: 20px;">between-B</div>
+            <div class="col-3" style="background: rgb(153, 14, 67);height: 20px;">between-C</div>
         </div>
-        <div class="row justify-content-around">
-            <div class="col-3" style="background: rgb(64, 46, 199);height: 20px;">ブロックA</div>
-            <div class="col-2" style="background: rgb(129, 119, 172);height: 20px;">ブロックB</div>
-            <div class="col-3" style="background: rgb(62, 34, 153);height: 20px;">ブロックC</div>
+        <div class="row justify-content-around" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgb(153, 202, 56);height: 20px;">around-A</div>
+            <div class="col-2" style="background: rgb(121, 180, 85);height: 20px;">around-B</div>
+            <div class="col-3" style="background: rgb(58, 148, 50);height: 20px;">around-C</div>
         </div>
-        <!-- 各ブロックの高さが異なる場：
-            align-items-startは上揃え（初期値）で
-            align-items-centerは上下中央揃えで
-            align-items-endは下揃えで配置されます。 -->
+
+        <!-- 
+            各ブロックの高さが異なる場：
+        　　align-items-startは上揃え（初期値）で
+        　　align-items-centerは上下中央揃えで
+            align-items-endは下揃えで配置されます。
+        -->
+        <div class="row align-items-start justify-content-around" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgba(168, 224, 38, 0.775);height: 70px;">start-A</div>
+            <div class="col-2" style="background: rgb(151, 177, 75);height: 50px;">start-B</div>
+            <div class="col-3" style="background: rgb(103, 155, 44);height: 30px;">start-C</div>
+        </div>
+        <div class="row align-items-center" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgba(221, 60, 181, 0.775);height: 70px;">center-A</div>
+            <div class="col-2" style="background: rgb(180, 97, 169);height: 50px;">center-B</div>
+            <div class="col-3" style="background: rgb(163, 34, 135);height: 30px;">center-C</div>
+        </div>
+        <div class="row align-items-end" style="border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3" style="background: rgba(226, 114, 49, 0.775);height: 70px;">end-A</div>
+            <div class="col-2" style="background: rgb(180, 154, 114);height: 50px;">end-B</div>
+            <div class="col-3" style="background: rgb(165, 136, 22);height: 30px;">end-C</div>
+        </div>
+
+        <!-- 
+            各ブロックに対して、縦方向の配置を個別に指定できるクラスも用意されています。
+            align-self-startはそのブロックを上揃えで
+            align-self-centerはそのブロックを上下中央揃えで
+            align-self-endはそのブロックを下揃えで配置されます。
+        -->
+        <div class="row" style="height: 100px; border: solid 1px rgb(36, 18, 136);">
+            <div class="col-3 align-self-start" style="background: rgba(226, 114, 49, 0.775);height: 70px;">self-start-A</div>
+            <div class="col-2 align-self-center" style="background: rgb(180, 154, 114);height: 50px;">self-center-B</div>
+            <div class="col-3 align-self-end" style="background: rgb(165, 136, 22);height: 30px;">self-end-C</div>
+        </div>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
