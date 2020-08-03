@@ -1,5 +1,3 @@
-<!-- 編集中 -->
-
 <!doctype html>
 <html lang="ja">
   <head>
@@ -14,25 +12,20 @@
   </head>
   <body>
       <div class="container-fluid">
-          <!--
-              col-sm-N⇒ブレイクポイント576px
-              col-md-N⇒ブレイクポイント768px
-              col-lg-N⇒ブレイクポイント992px
-              col-xl-N⇒ブレイクポイント1200px
-
-              「列幅を指定するクラス」をいくつも適用するときは、「画面サイズの小さいもの」から
-              「画面サイズの大きいもの」へ向かってレイアウトを考えていくのが基本です。
-          -->
           <div class="row">
-              <div class="col-md-7" style="background: #FD9;height: 200px;">ブロックA</div>
-              <div class="col-md-5" style="background: #9BF;height: 200px;">ブロックB</div>
+              <div class="col-6 order-md-2" style="background: #FD8;height: 200px;">ブロックA order-md-2</div>
+              <div class="col-6 order-md-1" style="background: #FD9;height: 200px;">ブロックB order-md-1</div>
           </div>
 
           <div class="row">
-              <div class="col-12 col-sm col-md-6" style="background-color: rgb(38, 168, 18);height: 200px;">ブロックD</div>
-              <div class="col-6 col-sm col-md-3" style="background-color: rgb(50, 182, 65);height: 200px;">ブロックE</div>
-              <div class="col-6 col-sm col-md-3" style="background-color: rgb(47, 160, 64);height: 200px;">ブロックF</div>
+              <div class="col-6 col-md-3" style="background-color: #79F;height: 200px;">ブロックC</div>
+              <div class="col-6 col-md-3 offset-md-6" style="background-color: #9BF;height: 200px;">ブロックD</div>
           </div>
+
+          <div class="row">
+            <div class="col-6" style="background: #6D9;height: 200px;">ブロックE</div>
+            <div class="col-6" style="background: #BFA;height: 200px;">ブロックF</div>
+        </div>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
