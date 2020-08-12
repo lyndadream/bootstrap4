@@ -1,1 +1,80 @@
-<!-- 編集中 -->
+<!doctype html>
+<html lang="ja">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+
+      <ul>
+        <li>チェックボックスやラジオボタンを配置するときは、各々の選択肢を&lt;div&gt;～&lt;/div&gt;で囲み、このdiv要素にform-checkのクラスを適用します。</li>
+        <li>さらに、input要素にform-check-input、label要素にform-check-labelのクラスを適用します。</li>
+        <li>input要素にchecked属性を追加しておくと、「選択済み」の状態で選択肢を表示できます。</li>
+        <li>input要素にdisabled属性を追加すると、その選択肢を「選択不可」にすることができます。</li>
+        <li>選択肢を横に並べて、インラインの配置にする場合、それぞれの選択肢のdiv要素にform-check-inlineのクラスを追加します。</li>
+      </ul>
+
+      <h1 class="mt-4 mb-4">購入フォーム</h1>
+
+      <form>
+        <div class="form-group mb-4">
+          <label for="name">お届け先指名</label>
+          <input type="text" class="form-control form-control-sm" id="name">
+        </div>
+        <div class="form-group mb-4">
+          <label for="address">お届け先住所</label>
+          <input type="text" class="form-control form-control-sm" id="address">
+        </div>
+        <div class="form-group mb-4">
+          オプション選択
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gift">
+            <label class="form-check-label" for="gift">ギフト包装</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="deli_date">
+            <label class="form-check-label" for="deli_date">配送日指定</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="post_mailing" disabled>
+            <label class="form-check-label" for="post_mailing">メール便</label>
+          </div>
+        </div>
+        <div class="form-group mb-4">
+          商品の色<br>
+          <div class="form-check form-check-inline mr-4">
+            <input class="form-check-input" type="radio" name="color" id="color_white" checked>
+            <label class="form-check-label" for="color_white">白</label>
+          </div>
+          <div class="form-check form-check-inline mr-4">
+            <input class="form-check-input" type="radio" name="color" id="color_red">
+            <label class="form-check-label" for="color_red">赤</label>
+          </div>
+          <div class="form-check form-check-inline mr-4">
+            <input class="form-check-input" type="radio" name="color" id="color_black">
+            <label class="form-check-label" for="color_black">黒</label>
+          </div>
+        </div> 
+        <div class="row">
+          <div class="col">
+            <button type="submit" class="btn btn-secondary">戻る</button>  
+            <button type="submit" class="btn btn-primary">次へ</button>           
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
